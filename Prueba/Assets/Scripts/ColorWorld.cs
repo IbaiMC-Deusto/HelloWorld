@@ -19,7 +19,7 @@ public class ColorWorld : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //Find by tag method
         if (FindByTag)
         {
             foreach (GameObject o in allGameObjectsWithTag)
