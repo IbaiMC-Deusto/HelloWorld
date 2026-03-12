@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            this.transform.position += Vector3.forward;
+            this.transform.position += Vector3.forward * Time.deltaTime;
         }
     }
 }
