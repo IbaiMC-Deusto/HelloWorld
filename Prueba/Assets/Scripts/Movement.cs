@@ -15,18 +15,18 @@ public class Movement : MonoBehaviour
     }
 
     /// <summary>
-    /// Checks the key presses by the player and moves the object.
-    /// 
-    /// <para name = "Space"> Space -> Forward </para>
+    /// Checks the key presses by the player and moves the object
+    /// <para name="Space"> Space -> Forward </para>
     /// <para name = "LeftControl"> LeftControl -> Back </para>
     /// <para name = "RigthArrow"> RightArrow -> Right </para>
     /// <para name = "LeftArrow"> LeftArrow -> Left </para>
     /// <para name = "DownArrow"> DownArrow -> Down </para>
     /// <para name = "UpArrow"> UpArrow -> Up </para>
     /// </summary>
-
     void Momevent()
     {
+
+        int Space = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             this.transform.position += Vector3.forward * Time.deltaTime;
